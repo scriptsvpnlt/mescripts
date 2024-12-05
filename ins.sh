@@ -37,10 +37,10 @@ echo -e "   \033[38;5;227m             INPUT YOUR DOMAIN              \e[0m"
 echo -e "   \033[38;5;197m ===========================================\e[0m"
 echo -e ""
 read -p "   input your domain   :   " host1
-echo "IP=" >> /var/lib/LT/ipvps.conf
-echo "$host1" >> /etc/xray/domain
-echo "$host1" >> /etc/xray/v2ray
-echo "$host1" >> /etc/xray/domainhost
+echo "IP=" > /var/lib/LT/ipvps.conf
+echo $host1 > /etc/xray/domain
+echo $host1 > /etc/xray/v2ray
+echo $host1 > /etc/xray/domainhost
 #echo "IP=$host1" > /var/lib/LT/ipvps.conf
 elif [[ $host == "2" ]]; then
 clear
