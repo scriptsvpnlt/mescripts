@@ -59,7 +59,7 @@ DOMAIN=execbash.baby
 sub=${domen}
 dns=${sub}.execbash.baby
 #(</dev/urandom tr -dc a-z0-9 | head -c5)
-CF_KEY=lHX2aquuB_YKSwsmKNeYHyIEiPAOkn6eMq5MQ6eW
+CF_KEY=bebc04e6e563f3894f91e9dd4a06282a
 CF_ID=mezzqueen293@gmail.com
 set -euo pipefail
 clear
