@@ -7,10 +7,6 @@ Ip_Vps=$(curl -sS ipv4.icanhazip.com)
 # make dir
 mkdir -p /etc/xray
 mkdir -p /var/lib/LT
-touch /etc/xray/domain
-touch /etc/xray/domainhost
-touch /etc/xray/v2ray
-touch /var/lib/LT/ipvps.conf
 # xray dir log
 mkdir -p /var/log/xray
 chown www-data.www-data /var/log/xray
@@ -39,8 +35,7 @@ echo -e ""
 read -p "   input your domain   :   " host1
 echo "IP=" > /var/lib/LT/ipvps.conf
 echo $host1 > /etc/xray/domain
-echo $host1 > /etc/xray/v2ray
-echo $host1 > /etc/xray/domainhost
+sleep 2
 #echo "IP=$host1" > /var/lib/LT/ipvps.conf
 elif [[ $host == "2" ]]; then
 clear
@@ -96,6 +91,7 @@ echo "$dns" > /etc/xray/domainhost
 echo "$dns" > /etc/xray/scdomain
 echo "$dns" > /etc/xray/v2ray
 echo "IP=$dns" > /var/lib/LT/ipvps.conf
+sleep 2
 cd
 clear
 else
